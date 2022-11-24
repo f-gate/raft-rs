@@ -6,4 +6,4 @@ edition = "2021"
 
 [dependencies]
 libp2p = {path = "../rust-libp2p"}
-trie-kv = {path = "../kv-trie"}
+kv-trie = {path = "../kv-trie"}

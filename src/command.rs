@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 #[derive(Deserialize, Serialize)]
 /// A command is what is serialized and gossiped when the leader wants to commit 
 /// certain logs.
-enum Command<T: RecordConfig> 
+enum <T: RecordConfig> Command<T> 
 {
     Insert{key: T::Key, value: T::Value},
     Get(T::Key),
